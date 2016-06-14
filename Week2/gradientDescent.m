@@ -18,7 +18,7 @@ for iter = 1:num_iters
     %
 
 Htheta = X * theta;
-    % Here I try to hold the original theta for the simutenious update.
+    % Here I try to hold the original theta for the following simultaneous update.
 for j = 1:2
 sum = X(:,j)' * (Htheta - y);
 theta(j) = theta(j) - alpha/m*sum;
